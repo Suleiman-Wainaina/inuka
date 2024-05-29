@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inuka - Donate</title>
+</head>
+<body>
+    <h1>Donate to a University</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ volunteer_form.as_p }}
+        {{ donation_form.as_p }}
+        <button type="submit">Donate</button>
+    </form>
+</body>
+</html>

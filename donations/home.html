@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inuka - Home</title>
+</head>
+<body>
+    <h1>Welcome to Inuka</h1>
+    <p>Select a university to donate to:</p>
+    <ul>
+        {% for university in universities %}
+            <li>{{ university.name }} - {{ university.location }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'donate' %}">Donate Now</a>
+</body>
+</html>
